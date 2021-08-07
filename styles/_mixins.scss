@@ -1,0 +1,31 @@
+@mixin for-phone {
+  @media (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-widescreen {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+// .header-title {
+//    font-size: 2rem;
+
+//    @include for-phone-only {
+//       font-size: 1rem;
+//    }
+// }
