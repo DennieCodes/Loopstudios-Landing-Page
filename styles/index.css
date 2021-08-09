@@ -1,8 +1,180 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+header,
+section {
+  margin-bottom: 6.25em;
+}
+
+section {
+  padding: 0 1em;
+}
+
+h1,
+h2,
+h3,
+.see-all {
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  line-height: 2.25rem;
+  color: white;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.125rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+p {
+  font-family: "Alata", sans-serif;
+  color: #8c8c8c;
+  line-height: 1.75em;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+footer nav li {
+  font-family: "Alata", sans-serif;
+  color: white;
+}
+
+header {
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  background-color: #ff7a7a;
+  height: 653px;
+  padding: 2.5em 1.5em;
+}
+header nav {
+  display: none;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 5em;
+  border: 2px solid white;
+  padding: 1em;
+}
+
+.hamburger-icon {
+  width: 1.5em;
+  height: 1em;
+}
+
+.intro p {
+  margin: 2em 2.125em 0;
+  text-align: center;
+}
+.intro img {
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.creations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.creations h2 {
+  margin-bottom: 1.75em;
+}
+.creations button {
+  order: 1;
+}
+.creations .item {
+  position: relative;
+  margin-bottom: 1.5em;
+}
+.creations .item h3 {
+  position: absolute;
+  top: 2.25em;
+  left: 1em;
+  width: 6em;
+}
+.creations .item img {
+  width: 100%;
+}
+.creations .see-all {
+  margin: 2em 5.25em 0;
+  height: 2.5em;
+  width: 10em;
+  color: black;
+  background: white;
+  border: 2px solid black;
+  font-weight: bolder;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+}
+footer img {
+  margin-top: 3.5em;
+  width: 9em;
+  height: 1.75em;
+}
+footer nav {
+  margin-top: 2.75em;
+  text-align: center;
+}
+footer nav li {
+  height: 0.75rem;
+  margin-bottom: 2em;
+}
+footer .social-media {
+  order: 1;
+  display: flex;
+  height: 1.75em;
+  margin: 2em 0 2em;
+}
+footer .social-media li {
+  margin: 0 0.75em;
+  width: 2em;
+}
+footer .social-media li img {
+  margin: 0;
+  height: 1.75em;
+  width: 2em;
+}
+footer .copyright-info {
+  order: 2;
+  margin-bottom: 3.8em;
+}
+
+/* Attribution */
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }

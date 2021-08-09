@@ -1,2 +1,16 @@
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
 $dark-gray: hsl(0, 0%, 55%);
-$very-dary-gray: hsl(0, 0%, 41%);
+$very-dark-gray: hsl(0, 0%, 41%);
+
+// p {
+//   color: $very-dark-gray;
+// }

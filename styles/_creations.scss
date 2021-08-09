@@ -1,0 +1,39 @@
+.creations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 1.75em;
+  }
+
+  button {
+    order: 1;
+  }
+
+  .item {
+    position: relative;
+    margin-bottom: 1.5em;
+
+    h3 {
+      position: absolute;
+      top: 2.25em;
+      left: 1em;
+      width: 6em;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .see-all {
+    margin: 2em 5.25em 0;
+    height: 2.5em;
+    width: 10em;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    font-weight: bolder;
+  }
+}

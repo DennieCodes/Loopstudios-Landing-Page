@@ -22,20 +22,30 @@
 
   <body>
     <header>
-      <img src="images/logo.svg" alt="Loopstudios Logo" />
+      <div class="main-nav">
+        <img src="./images/logo.svg" alt="Loopstudios Logo" />
+        <img
+          class="hamburger-icon"
+          src="./images/icon-hamburger.svg"
+          alt="Hamburger mobile icon"
+        />
 
-      <nav>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li>Support</li>
-      </nav>
-
+        <nav>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Events</li>
+          <li>Products</li>
+          <li>Support</li>
+        </nav>
+      </div>
       <h1>Immersive experiences that deliver</h1>
     </header>
 
-    <section>
+    <section class="intro">
+      <img
+        src="./images/mobile/image-interactive.jpg"
+        alt="Man using VR headset"
+      />
       <h2>The leader in interactive VR</h2>
 
       <p>
@@ -46,42 +56,95 @@
       </p>
     </section>
 
-    <section>
+    <section class="creations">
       <h2>Our creations</h2>
 
-      <button>See all</button>
+      <button class="see-all">See all</button>
 
-      <div>Deep earth</div>
-      <div>Night arcade</div>
-      <div>Soccer team VR</div>
-      <div>The grid</div>
-      <div>From up above VR</div>
-      <div>Pocket borealis</div>
-      <div>The curiosity</div>
-      <div>Make it fisheye</div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-deep-earth.jpg"
+          alt="The bottom portion of the Earth as seen from space"
+        />
+        <h3>Deep earth</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-night-arcade.jpg"
+          alt="Close up of some Skee ball games at the arcade"
+        />
+        <h3>Night arcade</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-soccer-team.jpg"
+          alt="Close up of a soccer player in a match"
+        />
+        <h3>Soccer team VR</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-grid.jpg"
+          alt="Close up of a race car"
+        />
+        <h3>The grid</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-from-above.jpg"
+          alt="Aerial view of a twisting, winding road"
+        />
+        <h3>From up above VR</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-pocket-borealis.jpg"
+          alt="View of the Aurora Borealis over a mountainscape"
+        />
+        <h3>Pocket borealis</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-curiosity.jpg"
+          alt="Close up of the Curiosity Rover in a beige background"
+        />
+        <h3>The curiosity</h3>
+      </div>
+      <div class="item">
+        <img
+          src="./images/mobile/image-fisheye.jpg"
+          alt="A warped view of a coastline seen through a fisheye lens"
+        />
+        <h3>Make it fisheye</h3>
+      </div>
     </section>
 
     <footer>
-      <!-- Brand and Social Media Links here -->
+      <img src="./images/logo.svg" alt="Loopstudios Logo" />
 
-      <div>
-        <nav>
-          <li>About</li>
-          <li>Careers</li>
-          <li>Events</li>
-          <li>Products</li>
-          <li>Support</li>
-        </nav>
+      <ul class="social-media">
+        <li><img src="images/icon-facebook.svg" alt="Facebook logo" /></li>
+        <li><img src="images/icon-twitter.svg" alt="twitter logo" /></li>
+        <li><img src="images/icon-pinterest.svg" alt="pinterest logo" /></li>
+        <li><img src="images/icon-instagram.svg" alt="instagram logo" /></li>
+      </ul>
 
-        <p>© 2021 Loopstudios. All rights reserved.</p>
-      </div>
+      <nav>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Events</li>
+        <li>Products</li>
+        <li>Support</li>
+      </nav>
+
+      <p class="copyright-info">© 2021 Loopstudios. All rights reserved.</p>
     </footer>
 
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/Oculareo">Dennie (Oculareo)</a>.
     </div>
 
     <script src="scripts/index.js"></script>
