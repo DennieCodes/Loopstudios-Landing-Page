@@ -1,10 +1,13 @@
+@import "./mixins";
+
 .creations {
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  h2 {
-    margin-bottom: 1.75em;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   button {
@@ -15,16 +18,13 @@
     position: relative;
     margin-bottom: 1.5em;
 
-    h3 {
-      position: absolute;
-      top: 2.25em;
-      left: 1em;
-      width: 6em;
-    }
-
     img {
       width: 100%;
     }
+  }
+
+  .grid {
+    width: 100vw;
   }
 
   .see-all {

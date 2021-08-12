@@ -1,13 +1,17 @@
+@import "./mixins";
+
 header {
   background-image: url("/images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
 
-  background-color: hsl(0, 100%, 74%);
-
   height: 653px;
   padding: 2.5em 1.5em;
+
+  @include tablet-portrait {
+    background-image: url("/images/desktop/image-hero.jpg");
+  }
 
   nav {
     display: none;
@@ -19,12 +23,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-}
-
-h1 {
-  margin-top: 5em;
-  border: 2px solid white;
-  padding: 1em;
 }
 
 .hamburger-icon {

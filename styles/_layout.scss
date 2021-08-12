@@ -1,8 +1,18 @@
-header,
-section {
+@import "./mixins";
+
+header {
   margin-bottom: 6.25em;
 }
 
 section {
+  margin-bottom: 6.25em;
   padding: 0 1em;
+
+  @include mobile-landscape {
+    padding: 0 3em;
+  }
+
+  @include tablet-portrait {
+    padding: 0 5em;
+  }
 }
