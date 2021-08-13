@@ -24,11 +24,22 @@
     <header>
       <div class="main-nav">
         <img src="./images/logo.svg" alt="Loopstudios Logo" />
-        <img
-          class="hamburger-icon"
-          src="./images/icon-hamburger.svg"
-          alt="Hamburger mobile icon"
-        />
+
+        <label class="res-menu-label" for="res-menu">
+          <img
+            class="res-menu-hamburger-icon"
+            src="./images/icon-hamburger.svg"
+            alt="Hamburger mobile icon"
+          />
+
+          <!-- <img
+            class="res-menu-close-icon"
+            src="./images/icon-close.svg"
+            alt="Close icon"
+          /> -->
+        </label>
+
+        <input class="res-menu-input" type="checkbox" id="res-menu" />
 
         <nav>
           <li>About</li>
@@ -63,60 +74,115 @@
       <button class="see-all">See all</button>
 
       <div class="item">
-        <img
-          src="./images/mobile/image-deep-earth.jpg"
-          alt="The bottom portion of the Earth as seen from space"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-deep-earth.jpg"
+          />
+          <img
+            src="./images/mobile/image-deep-earth.jpg"
+            alt="The bottom portion of the Earth as seen from space"
+          />
+        </picture>
 
         <h3>Deep earth</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-night-arcade.jpg"
-          alt="Close up of some Skee ball games at the arcade"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-night-arcade.jpg"
+          />
+          <img
+            src="./images/mobile/image-night-arcade.jpg"
+            alt="Close up of some Skee ball games at the arcade"
+          />
+        </picture>
         <h3>Night arcade</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-soccer-team.jpg"
-          alt="Close up of a soccer player in a match"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-soccer-team.jpg"
+          />
+          <img
+            src="./images/mobile/image-soccer-team.jpg"
+            alt="Close up of a soccer player in a match"
+          />
+        </picture>
         <h3>Soccer team VR</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-grid.jpg"
-          alt="Close up of a race car"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-grid.jpg"
+          />
+          <img
+            src="./images/mobile/image-grid.jpg"
+            alt="Close up of a race car"
+          />
+        </picture>
         <h3 class="grid">The grid</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-from-above.jpg"
-          alt="Aerial view of a twisting, winding road"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-from-above.jpg"
+          />
+          <img
+            src="./images/mobile/image-from-above.jpg"
+            alt="Aerial view of a twisting, winding road"
+          />
+        </picture>
         <h3>From up above VR</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-pocket-borealis.jpg"
-          alt="View of the Aurora Borealis over a mountainscape"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-pocket-borealis.jpg"
+          />
+          <img
+            src="./images/mobile/image-pocket-borealis.jpg"
+            alt="View of the Aurora Borealis over a mountainscape"
+          />
+        </picture>
         <h3>Pocket borealis</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-curiosity.jpg"
-          alt="Close up of the Curiosity Rover in a beige background"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-curiosity.jpg"
+          />
+          <img
+            src="./images/mobile/image-curiosity.jpg"
+            alt="Close up of the Curiosity Rover in a beige background"
+          />
+        </picture>
         <h3>The curiosity</h3>
       </div>
+
       <div class="item">
-        <img
-          src="./images/mobile/image-fisheye.jpg"
-          alt="A warped view of a coastline seen through a fisheye lens"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="./images/desktop/image-fisheye.jpg"
+          />
+          <img
+            src="./images/mobile/image-fisheye.jpg"
+            alt="A warped view of a coastline seen through a fisheye lens"
+          />
+        </picture>
         <h3>Make it fisheye</h3>
       </div>
     </section>

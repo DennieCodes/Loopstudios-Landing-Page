@@ -7,6 +7,7 @@ header {
   background-position: top center;
 
   height: 653px;
+  box-sizing: border-box;
   padding: 2.5em 1.5em;
 
   @include tablet-portrait {
@@ -15,17 +16,55 @@ header {
 
   nav {
     display: none;
+    position: absolute;
+    width: calc(100% + 1em);
+    height: 667px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    left: -1em;
+    top: -11px;
+
+    padding-left: 2.5em;
+    padding-top: 14em;
+
+    & li {
+      margin-bottom: 2em;
+    }
   }
 }
 
 .main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
 .hamburger-icon {
   width: 1.5em;
   height: 1em;
+}
+
+.res-menu {
+  &-input {
+    opacity: 0;
+    z-index: 1;
+
+    &:checked ~ nav {
+      display: block;
+    }
+  }
+
+  &-label {
+    position: relative;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 2;
+
+    & img {
+      position: absolute;
+      top: -0.5em;
+      left: -1em;
+    }
+  }
 }

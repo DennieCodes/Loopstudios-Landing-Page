@@ -5,7 +5,8 @@
 h1,
 h2,
 h3,
-.see-all {
+.see-all,
+.main-nav nav {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
 }
@@ -64,6 +65,10 @@ p {
   line-height: 1.75em;
   font-weight: 400;
   font-size: 15px;
+}
+
+.main-nav nav {
+  font-size: 1.25rem;
 }
 
 footer nav li {

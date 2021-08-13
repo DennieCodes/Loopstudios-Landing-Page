@@ -30,7 +30,8 @@ section {
 h1,
 h2,
 h3,
-.see-all {
+.see-all,
+.main-nav nav {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
 }
@@ -62,7 +63,7 @@ h2 {
 .creations h2 {
   margin-bottom: 1.75em;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .creations h2 {
     width: 100%;
   }
@@ -88,6 +89,10 @@ p {
   font-size: 15px;
 }
 
+.main-nav nav {
+  font-size: 1.25rem;
+}
+
 footer nav li {
   font-family: "Alata", sans-serif;
   color: white;
@@ -99,6 +104,7 @@ header {
   background-size: cover;
   background-position: top center;
   height: 653px;
+  box-sizing: border-box;
   padding: 2.5em 1.5em;
 }
 @media (min-width: 600px) {
@@ -108,18 +114,49 @@ header {
 }
 header nav {
   display: none;
+  position: absolute;
+  width: calc(100% + 1em);
+  height: 667px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  left: -1em;
+  top: -11px;
+  padding-left: 2.5em;
+  padding-top: 14em;
+}
+header nav li {
+  margin-bottom: 2em;
 }
 
 .main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 
 .hamburger-icon {
   width: 1.5em;
   height: 1em;
+}
+
+.res-menu-input {
+  opacity: 0;
+  z-index: 1;
+}
+.res-menu-input:checked ~ nav {
+  display: block;
+}
+.res-menu-label {
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+  z-index: 2;
+}
+.res-menu-label img {
+  position: absolute;
+  top: -0.5em;
+  left: -1em;
 }
 
 .intro p {
@@ -136,10 +173,12 @@ header nav {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .creations {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 2em;
   }
 }
 .creations button {
@@ -177,8 +216,16 @@ footer img {
   height: 1.75em;
 }
 footer nav {
+  display: flex;
+  flex-direction: column;
   margin-top: 2.75em;
-  text-align: center;
+  justify-content: center;
+}
+@media (min-width: 600px) {
+  footer nav {
+    flex-direction: row;
+    gap: 0 2em;
+  }
 }
 footer nav li {
   height: 0.75rem;
