@@ -110,6 +110,7 @@ header {
 @media (min-width: 600px) {
   header {
     background-image: url("/images/desktop/image-hero.jpg");
+    padding-left: min(10%, 165px);
   }
 }
 header nav {
@@ -125,8 +126,47 @@ header nav {
   padding-left: 2.5em;
   padding-top: 14em;
 }
+@media (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 386px;
+    transform: translateX(25%);
+    height: unset;
+    background-color: unset;
+    left: 0;
+    top: 4.5em;
+    padding: 0;
+  }
+}
+@media (min-width: 768px) {
+  header nav {
+    position: unset;
+    justify-content: unset;
+    width: unset;
+    transform: unset;
+  }
+}
 header nav li {
   margin-bottom: 2em;
+}
+@media (min-width: 600px) {
+  header nav li {
+    margin: 0.5em;
+    font-family: "Alata", "san-serif";
+    text-transform: none;
+    font-size: 1rem;
+  }
+}
+header nav img {
+  position: absolute;
+  top: 2.55em;
+  left: 2.2em;
+}
+@media (min-width: 600px) {
+  header nav img {
+    display: none;
+  }
 }
 
 .main-nav {
@@ -157,6 +197,11 @@ header nav li {
   position: absolute;
   top: -0.5em;
   left: -1em;
+}
+@media (min-width: 600px) {
+  .res-menu-label img {
+    display: none;
+  }
 }
 
 .intro p {
