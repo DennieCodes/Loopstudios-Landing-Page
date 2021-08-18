@@ -31,11 +31,12 @@
 
     img {
       width: 100%;
+      filter: brightness(75%);
     }
   }
 
   .grid {
-    width: 100vw;
+    width: 4em;
   }
 
   .see-all {

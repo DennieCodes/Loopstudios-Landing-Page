@@ -5,11 +5,13 @@
 
   &-info {
     @include desktop {
+      box-sizing: border-box;
       position: absolute;
       width: 544px;
-      right: -2em;
-      top: 11.5em;
-      padding: 6.25em;
+      right: 10.5em;
+      top: 12.8em;
+      padding: 5em;
+      padding-right: 0;
       background: white;
     }
   }
@@ -20,6 +22,7 @@
 
     @include desktop {
       text-align: left;
+      margin-left: 0;
     }
   }
 

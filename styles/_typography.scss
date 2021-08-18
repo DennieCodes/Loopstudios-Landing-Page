@@ -27,12 +27,27 @@ h1 {
     line-height: 2.5rem;
     width: 432px;
   }
+
+  @include desktop {
+    font-size: 3.5rem;
+    margin: 2.25em 0 0;
+    line-height: 3.75rem;
+    width: 652px;
+    padding: 0.85em;
+    padding-right: 2em;
+  }
 }
 
 h2 {
   font-size: 2rem;
   line-height: 2.125rem;
   text-align: center;
+
+  @include desktop {
+    text-align: left;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .creations h2 {
@@ -57,8 +72,13 @@ h3 {
 .item h3 {
   position: absolute;
   bottom: 1.15em;
-  left: 1em;
+  left: 1.75em;
   width: 6em;
+
+  @include desktop {
+    font-size: 1.75rem;
+    line-height: 1.85rem;
+  }
 }
 
 p {

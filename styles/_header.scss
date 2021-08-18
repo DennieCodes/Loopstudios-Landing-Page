@@ -61,6 +61,11 @@ header {
         text-transform: none;
         font-size: 1rem;
       }
+
+      @include desktop {
+        margin: 0;
+        margin-left: 2em;
+      }
     }
 
     img {

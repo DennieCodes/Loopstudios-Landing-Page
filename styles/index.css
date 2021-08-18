@@ -74,11 +74,28 @@ h1 {
     width: 432px;
   }
 }
+@media (min-width: 1440px) {
+  h1 {
+    font-size: 3.5rem;
+    margin: 2.25em 0 0;
+    line-height: 3.75rem;
+    width: 652px;
+    padding: 0.85em;
+    padding-right: 2em;
+  }
+}
 
 h2 {
   font-size: 2rem;
   line-height: 2.125rem;
   text-align: center;
+}
+@media (min-width: 1440px) {
+  h2 {
+    text-align: left;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .creations h2 {
@@ -105,8 +122,14 @@ h3 {
 .item h3 {
   position: absolute;
   bottom: 1.15em;
-  left: 1em;
+  left: 1.75em;
   width: 6em;
+}
+@media (min-width: 1440px) {
+  .item h3 {
+    font-size: 1.75rem;
+    line-height: 1.85rem;
+  }
 }
 
 p {
@@ -191,6 +214,12 @@ header nav li {
     font-size: 1rem;
   }
 }
+@media (min-width: 1440px) {
+  header nav li {
+    margin: 0;
+    margin-left: 2em;
+  }
+}
 header nav img {
   position: absolute;
   top: 2.55em;
@@ -242,11 +271,13 @@ header nav img {
 }
 @media (min-width: 1440px) {
   .intro-info {
+    box-sizing: border-box;
     position: absolute;
     width: 544px;
-    right: -2em;
-    top: 11.5em;
-    padding: 6.25em;
+    right: 10.5em;
+    top: 12.8em;
+    padding: 5em;
+    padding-right: 0;
     background: white;
   }
 }
@@ -257,6 +288,7 @@ header nav img {
 @media (min-width: 1440px) {
   .intro p {
     text-align: left;
+    margin-left: 0;
   }
 }
 .intro img {
@@ -309,9 +341,10 @@ header nav img {
 }
 .creations .item img {
   width: 100%;
+  filter: brightness(75%);
 }
 .creations .grid {
-  width: 100vw;
+  width: 4em;
 }
 .creations .see-all {
   margin: 2em 5.25em 0;
@@ -343,9 +376,28 @@ footer {
   align-items: center;
   background: black;
 }
-footer img {
+@media (min-width: 1440px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2.5em 10em;
+    gap: 2em 0;
+    align-items: flex-start;
+    padding-bottom: 1em;
+  }
+  footer > * {
+    flex: 50%;
+  }
+}
+footer .footer-logo {
   margin-top: 3.5em;
   width: 9em;
+}
+@media (min-width: 1440px) {
+  footer .footer-logo {
+    margin-top: 0;
+    flex-grow: 0;
+  }
 }
 footer nav {
   display: flex;
@@ -363,6 +415,13 @@ footer nav li {
   height: 0.75rem;
   margin-bottom: 2em;
 }
+@media (min-width: 1440px) {
+  footer nav {
+    justify-content: flex-start;
+    margin-top: 0;
+    gap: 0 3em;
+  }
+}
 footer .social-media {
   order: 1;
   display: flex;
@@ -378,9 +437,37 @@ footer .social-media li img {
   height: 1.75em;
   width: 2em;
 }
+@media (min-width: 1440px) {
+  footer .social-media li img {
+    height: 1.5em;
+    width: 1.5em;
+  }
+}
+@media (min-width: 1440px) {
+  footer .social-media {
+    order: 0;
+    justify-content: flex-end;
+    margin: 0;
+    align-self: flex-end;
+  }
+}
 footer .copyright-info {
   order: 2;
   margin-bottom: 3.8em;
+}
+@media (min-width: 1440px) {
+  footer .copyright-info {
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+
+@media (min-width: 1440px) {
+  footer .social-media li {
+    margin: 0;
+    margin-left: 1em;
+    width: 1.5em;
+  }
 }
 
 /* Attribution */
