@@ -5,20 +5,29 @@
   flex-direction: column;
   align-items: center;
 
-  @include tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0 2em;
+  .item-container {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 2em;
+    }
   }
 
-  button {
-    order: 1;
+  @include desktop-small {
+    justify-content: space-between;
   }
 
   .item {
     position: relative;
     margin-bottom: 1.5em;
+
+    @include desktop-small {
+      max-width: 254px;
+    }
 
     img {
       width: 100%;
@@ -37,5 +46,17 @@
     background: white;
     border: 2px solid black;
     font-weight: bolder;
+    order: 1;
+
+    @include desktop-small {
+      order: 0;
+      margin: 0;
+      position: absolute;
+      right: 6em;
+    }
+
+    @include desktop {
+      right: 12em;
+    }
   }
 }

@@ -15,4 +15,23 @@ section {
   @include tablet-portrait {
     padding: 0 5em;
   }
+
+  @include desktop {
+    padding: 0 10em;
+  }
+
+  &.intro {
+    @include tablet {
+      padding: 0 8em;
+    }
+
+    @include desktop-small {
+      display: flex;
+      padding: 0 5em;
+    }
+
+    @include desktop {
+      padding: 0 10em;
+    }
+  }
 }

@@ -22,14 +22,14 @@
   }
 }
 
-@mixin tablet-landscape {
-  @media (max-width: 1024px) {
+@mixin desktop-small {
+  @media (min-width: 1024px) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (max-width: 1440px) {
+  @media (min-width: 1440px) {
     @content;
   }
 }

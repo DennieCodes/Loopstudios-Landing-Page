@@ -26,6 +26,27 @@ section {
     padding: 0 5em;
   }
 }
+@media (min-width: 1440px) {
+  section {
+    padding: 0 10em;
+  }
+}
+@media (min-width: 768px) {
+  section.intro {
+    padding: 0 8em;
+  }
+}
+@media (min-width: 1024px) {
+  section.intro {
+    display: flex;
+    padding: 0 5em;
+  }
+}
+@media (min-width: 1440px) {
+  section.intro {
+    padding: 0 10em;
+  }
+}
 
 h1,
 h2,
@@ -66,6 +87,13 @@ h2 {
 @media (min-width: 768px) {
   .creations h2 {
     width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .creations h2 {
+    text-align: left;
+    align-self: start;
+    width: 50%;
   }
 }
 
@@ -111,6 +139,11 @@ header {
   header {
     background-image: url("/images/desktop/image-hero.jpg");
     padding-left: min(10%, 165px);
+  }
+}
+@media (min-width: 1440px) {
+  header {
+    padding: 4em 10em 0;
   }
 }
 header nav {
@@ -204,13 +237,43 @@ header nav img {
   }
 }
 
+.intro {
+  position: relative;
+}
+@media (min-width: 1440px) {
+  .intro-info {
+    position: absolute;
+    width: 544px;
+    right: -2em;
+    top: 11.5em;
+    padding: 6.25em;
+    background: white;
+  }
+}
 .intro p {
   margin: 2em 2.125em 0;
   text-align: center;
 }
+@media (min-width: 1440px) {
+  .intro p {
+    text-align: left;
+  }
+}
 .intro img {
   width: 100%;
+  max-width: 727px;
   margin-bottom: 3em;
+}
+@media (min-width: 1024px) {
+  .intro img {
+    width: 60%;
+    max-width: 727px;
+  }
+}
+@media (min-width: 1440px) {
+  .intro img {
+    width: 727px;
+  }
 }
 
 .creations {
@@ -218,20 +281,31 @@ header nav img {
   flex-direction: column;
   align-items: center;
 }
+.creations .item-container {
+  display: flex;
+  flex-direction: column;
+}
 @media (min-width: 768px) {
-  .creations {
+  .creations .item-container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 0 2em;
   }
 }
-.creations button {
-  order: 1;
+@media (min-width: 1024px) {
+  .creations {
+    justify-content: space-between;
+  }
 }
 .creations .item {
   position: relative;
   margin-bottom: 1.5em;
+}
+@media (min-width: 1024px) {
+  .creations .item {
+    max-width: 254px;
+  }
 }
 .creations .item img {
   width: 100%;
@@ -247,6 +321,20 @@ header nav img {
   background: white;
   border: 2px solid black;
   font-weight: bolder;
+  order: 1;
+}
+@media (min-width: 1024px) {
+  .creations .see-all {
+    order: 0;
+    margin: 0;
+    position: absolute;
+    right: 6em;
+  }
+}
+@media (min-width: 1440px) {
+  .creations .see-all {
+    right: 12em;
+  }
 }
 
 footer {
@@ -258,7 +346,6 @@ footer {
 footer img {
   margin-top: 3.5em;
   width: 9em;
-  height: 1.75em;
 }
 footer nav {
   display: flex;

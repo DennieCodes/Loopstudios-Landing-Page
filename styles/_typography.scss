@@ -27,10 +27,6 @@ h1 {
     line-height: 2.5rem;
     width: 432px;
   }
-
-  // @include tablet-portrait {
-  //   // width: 12ch;
-  // }
 }
 
 h2 {
@@ -44,6 +40,12 @@ h2 {
 
   @include tablet {
     width: 100%;
+  }
+
+  @include desktop-small {
+    text-align: left;
+    align-self: start;
+    width: 50%;
   }
 }
 

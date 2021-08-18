@@ -1,11 +1,40 @@
+@import "./mixins";
+
 .intro {
+  position: relative;
+
+  &-info {
+    @include desktop {
+      position: absolute;
+      width: 544px;
+      right: -2em;
+      top: 11.5em;
+      padding: 6.25em;
+      background: white;
+    }
+  }
+
   & p {
     margin: 2em 2.125em 0;
     text-align: center;
+
+    @include desktop {
+      text-align: left;
+    }
   }
 
   & img {
     width: 100%;
+    max-width: 727px;
     margin-bottom: 3em;
+
+    @include desktop-small {
+      width: 60%;
+      max-width: 727px;
+    }
+
+    @include desktop {
+      width: 727px;
+    }
   }
 }
