@@ -254,6 +254,15 @@ header nav img {
 .res-menu-input:checked ~ nav {
   display: block;
 }
+.res-menu-input:checked ~ label .res-menu-hamburger-icon {
+  display: none;
+}
+.res-menu-input:checked ~ label .res-menu-close-icon {
+  display: block;
+}
+.res-menu-close-icon {
+  display: none;
+}
 .res-menu-label {
   position: relative;
   margin-left: auto;

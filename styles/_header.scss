@@ -99,6 +99,18 @@ header {
     &:checked ~ nav {
       display: block;
     }
+
+    &:checked ~ label .res-menu-hamburger-icon {
+      display: none;
+    }
+
+    &:checked ~ label .res-menu-close-icon {
+      display: block;
+    }
+  }
+
+  &-close-icon {
+    display: none;
   }
 
   &-label {
