@@ -8,6 +8,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   margin-bottom: 6.25em;
 }
@@ -333,6 +338,7 @@ header nav img {
 .creations .item {
   position: relative;
   margin-bottom: 1.5em;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .creations .item {
@@ -355,6 +361,7 @@ header nav img {
   border: 2px solid black;
   font-weight: bolder;
   order: 1;
+  cursor: pointer;
 }
 @media (min-width: 1024px) {
   .creations .see-all {
@@ -392,6 +399,7 @@ footer {
 footer .footer-logo {
   margin-top: 3.5em;
   width: 9em;
+  cursor: pointer;
 }
 @media (min-width: 1440px) {
   footer .footer-logo {

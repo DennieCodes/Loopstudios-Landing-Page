@@ -24,6 +24,7 @@
   .item {
     position: relative;
     margin-bottom: 1.5em;
+    cursor: pointer;
 
     @include desktop-small {
       max-width: 254px;
@@ -48,6 +49,7 @@
     border: 2px solid black;
     font-weight: bolder;
     order: 1;
+    cursor: pointer;
 
     @include desktop-small {
       order: 0;
