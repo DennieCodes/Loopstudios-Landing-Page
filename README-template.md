@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor: Loopstudios Landing Page solution](https://www.frontendmentor.io/solutions/css-flexbox-organized-with-sass-ak-bG2VIS)
+- Live Site URL: [Loopstudios Landing Page](https://loopstudios-landing-page-murex.vercel.app/)
 
 ## My process
 
