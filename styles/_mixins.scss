@@ -33,3 +33,9 @@
     @content;
   }
 }
+
+@mixin desktop-wide {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}

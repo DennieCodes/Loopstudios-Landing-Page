@@ -339,6 +339,11 @@ header nav img {
     gap: 0 2em;
   }
 }
+@media (min-width: 1920px) {
+  .creations .item-container {
+    justify-content: space-between;
+  }
+}
 @media (min-width: 1024px) {
   .creations {
     justify-content: space-between;
