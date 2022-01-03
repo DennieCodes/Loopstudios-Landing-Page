@@ -49,6 +49,6 @@ There were lots of tricky layout challenges changing orientation, order and item
 
 ## Author
 
-- Website - [Dennie (Oculareo)](https://github.com/Oculareo)
+- Website - [DennieCodes](https://github.com/DennieCodes)
 - Frontend Mentor - [@Oculareo](https://www.frontendmentor.io/profile/Oculareo)
-- Twitter - [@DennieDev](https://twitter.com/DennieDev)
+- Twitter - [@DennieDev](https://twitter.com/DennieCodes)
